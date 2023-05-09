@@ -1,0 +1,179 @@
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --color-bg: linear-gradient(
+    90deg,
+    rgba(240, 244, 255, 1) 0%,
+    rgba(165, 182, 238, 1) 100%
+  );
+  --color-main: linear-gradient(
+    90deg,
+    rgba(85, 114, 187, 1) 0%,
+    rgba(55, 75, 124, 1) 100%
+  );
+  --color-box: linear-gradient(
+    90deg,
+    rgba(48, 69, 119, 1) 0%,
+    rgba(76, 101, 160, 1) 100%
+  );
+  --color-white: #fff;
+  --color-line: #3d538a;
+  --color-txt: #8596bf;
+  --color-txt-light: #a5b6ee;
+  --color-border: #354971;
+}
+
+/* Resets */
+body,
+h1,
+h2,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard-Regular", sans-serif;
+}
+
+h2 {
+  font-family: "Pretendard-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/* Components */
+body {
+  max-width: 400px;
+  margin: 0 auto;
+  background: var(--color-bg);
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 244px;
+  height: 48px;
+  margin: 72px 0 60px;
+}
+
+.timer {
+  font-family: "Pretendard-Bold", sans-serif;
+  width: 400px;
+  height: 360px;
+  padding: 48px 44px 40px;
+  text-align: center;
+  background: var(--color-main);
+  border-radius: 16px;
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+}
+
+.timer h2 {
+  color: var(--color-white);
+}
+
+.timer .line {
+  width: 312px;
+  height: 1px;
+  background-color: var(--color-line);
+  margin: 23px 0 33px;
+}
+
+.section-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-time label {
+  font-size: 12px;
+  color: var(--color-txt-light);
+}
+
+.section-time .box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-main);
+  margin-top: 4px;
+
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+}
+.section-time input {
+  background-color: transparent;
+  width: 53px;
+  color: var(--color-white);
+  font-size: 40px;
+  margin-left: 2px;
+}
+
+.section-time input:value {
+  color: var(--color-white);
+  font-size: 40px;
+}
+.section-time .dot {
+  display: block;
+  width: 6px;
+  height: 26px;
+  margin: 0 8px;
+}
+
+.section-time .hrs,
+.section-time .min,
+.section-time .sec {
+  margin-bottom: 24px;
+}
+
+.btn-start {
+  margin-right: 12px;
+}

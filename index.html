@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="logo">
+      <img src="./images/weniv-logo.svg" alt="위니브 로고" />
+    </h1>
+    <article class="timer">
+      <h2>TIMER</h2>
+      <div class="line"></div>
+      <section class="section-time">
+        <div class="hrs">
+          <label for="inpHrs">HRS</label>
+          <div class="box">
+            <input type="text" id="inpHrs" class="inp-hrs" value="00" />
+          </div>
+        </div>
+        <img class="dot" src="images/dot.png" alt="" />
+        <div class="min">
+          <label for="inpMin">MIN</label>
+          <div class="box">
+            <input type="text" id="inpMin" class="inp-min" value="00" />
+          </div>
+        </div>
+        <img class="dot" src="images/dot.png" alt="" />
+        <div class="sec">
+          <label for="inpSec">SEC</label>
+          <div class="box">
+            <input type="text" id="inpSec" class="inp-sec" value="00" />
+          </div>
+        </div>
+      </section>
+      <button class="btn-start" type="button">
+        <img src="images/start-default.png" alt="타이머 시작 버튼" />
+      </button>
+      <button class="btn-reset" type="button">
+        <img src="images/reset-default.png" alt="타이머 리셋 버튼" />
+      </button>
+    </article>
+    <script src="main.js"></script>
+  </body>
+</html>
